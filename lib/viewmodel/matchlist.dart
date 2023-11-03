@@ -39,7 +39,7 @@ class _MatchListState extends State<MatchList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Match Data'),
+        title: const Text('Match Data'),
       ),
       body: ListView.builder(
         itemCount: matches.length,
@@ -59,7 +59,7 @@ class _MatchListState extends State<MatchList> {
                 builder: (context) => ResultsPage(matches: matches)),
           );
         },
-        child: Icon(Icons.arrow_forward),
+        child: const Icon(Icons.arrow_forward),
       ),
     );
   }
